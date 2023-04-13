@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocketshoes</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <nav class="menu-navigation">
+                <ul>
+                    <li>
+                        <a href="#Logo"><img class="logo" src="./assets/logo.svg" alt="icon"></a>
+                    </li>
+                    <li>
+                        <a href="#Man">homem</a>
+                    </li>
+                    <li>
+                        <a href="#Woman">mulher</a>
+                    </li>
+                    <li>
+                        <a href="#Child">criança</a>
+                    </li>
+                    <li>
+                        <a href="#Custon">customizar</a>
+                    </li>
+                    <li>
+                        <input type="search" name="search" id="search" placeholder="Pesquisar">
+                    </li>
+                    <li>
+                        <a href="#Bag">
+                            <img class="bag" src="./assets/icon-bag.svg" alt="icon" title="mochila">
+                        </a>
+                    </li>
+                </ul>
+        </header>
+        <main> 
+            <div class="product">
+
+                <h1 id="product-title">tênis esportivo para corrida top</h1>
+                <p id="product-info">Esse tênis tem o intuito de te deixar ainda mais fitnes,focado,e musculoso</p>
+                <h2 id="price">R$ 1.000,00</h2>
+                <button class="buy-btn" type="button">comprar</button>
+            </div>
+        </main>
+        </nav>
+        <div class="backgroundSide"></div> <!----background-right----->
+        <aside>
+            <div class="aside-page">
+                <div class="galery">
+                    <div class="amplied-image">
+                        <span>
+                            <img src="./assets/tenis-1-ampliado.png" alt="image2x" id="mainImage">
+                        </span>
+                    </div>
+
+                    <div class="thumbnail-image">
+                        <div class="row">
+                            <button id="rowBtn">
+                                <li><img src="./assets/tenis-1-galeria.png"
+                                        onclick="changeImage1('./assets/tenis-1-ampliado.png')" alt="imagem esquerda"
+                                        title="image-1" id="thumb1" name="thumb1"></li>
+                            </button>
+                        </div>
+                        <div class="row2">
+                            <button id="rowBtn2">
+                                <li><img src="./assets/tenis-2-galeria.png"
+                                        onclick="changeImage2('./assets/tenis-2-ampliado.png')" alt="imagem centro"
+                                        title="image-2" id="thumb2" name="thumb1">
+                                </li>
+                            </button>
+                        </div>
+                        <div class="row3">
+                            <button id="rowBtn3">
+                                <li><img src="./assets/tenis-3-galeria.png"
+                                        onclick="changeImage3('./assets/tenis-3-ampliado.png')" alt="imagem direita"
+                                        title="image-3" id="thumb3" name="thumb1">
+                                </li>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <footer>
+            <ul>
+                <li>
+                    <iframe src="https://www.youtube.com/embed/OdWpVYoj_EI" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </li>
+                <li>
+                    <a href="#Face">facebook</a>
+                </li>
+                <li>
+                    <a href="#Insta">instagram</a>
+                </li>
+                <li>
+                    <a href="#you">youtube</a>
+                </li>
+                <li>
+                    <a href="#Twite">twitter</a>
+                </li>
+                <li>
+                    <button class="btn-explorer">
+                        explere mais
+                        <span>
+                            <img src="./assets/icon-arrow.svg" alt="icon">
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
