@@ -14,12 +14,58 @@
 
 <body>
     <div class="page">
-        <header>
+        <header class="header">
             <nav class="menu-navigation">
+                <ul class="list-header">
+                    <li>
+                        <img class="logo" src="./assets/logo.svg" alt="icon">
+                    </li>
+                    <li>
+                        <a href="#Man">homem</a>
+                    </li>
+                    <li>
+                        <a href="#Woman">mulher</a>
+                    </li>
+                    <li>
+                        <a href="#Child">criança</a>
+                    </li>
+                    <li>
+                        <a href="#Custom">customizar</a>
+                    </li>
+                    <li>
+                        <input type="search" name="search" id="search" placeholder="Pesquisar">
+                    </li>
+                    <li>
+                        <a href="#Bag">
+                            <img class="bag" src="./assets/icon-bag.svg" alt="icon" title="mochila">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-navigation-mobile"> <!--mobile top menu-->
                 <ul>
                     <li>
-                        <a href="#Logo"><img class="logo" src="./assets/logo.svg" alt="icon"></a>
+                        <img src="./assets/logo.svg" alt="logo">
+                        <span>
+                            <p>Rocketshoes</p>
+                        </span>
+
                     </li>
+                    <li>
+                        <a id="bag-mobile" href="#Bag">
+                            <img class="bag-mobile" src="./assets/icon-bag.svg" alt="icon" title="mochila">
+                        </a>
+                        <button class="menu-mobile-open">
+                            <img src="./assets/Menu.svg" alt="">
+                        </button>
+                        <button class="menu-mobile-close">
+                            <img src="./assets/fechar.svg" alt="">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <nav class="menu-links"> <!--mobile menus-->
+                <ul>
                     <li>
                         <a href="#Man">homem</a>
                     </li>
@@ -33,16 +79,12 @@
                         <a href="#Custon">customizar</a>
                     </li>
                     <li>
-                        <input type="search" name="search" id="search" placeholder="Pesquisar">
-                    </li>
-                    <li>
-                        <a href="#Bag">
-                            <img class="bag" src="./assets/icon-bag.svg" alt="icon" title="mochila">
-                        </a>
+                        <input type="search" id="mobile-seach" placeholder="Pesquisar">
                     </li>
                 </ul>
+            </nav>
         </header>
-        <main> 
+        <main>
             <div class="product">
 
                 <h1 id="product-title">tênis esportivo para corrida top</h1>
@@ -51,7 +93,6 @@
                 <button class="buy-btn" type="button">comprar</button>
             </div>
         </main>
-        </nav>
         <div class="backgroundSide"></div> <!----background-right----->
         <aside>
             <div class="aside-page">
@@ -68,7 +109,6 @@
                                 <li><img src="./assets/tenis-1-galeria.png"
                                         onclick="changeImage1('./assets/tenis-1-ampliado.png')" alt="imagem esquerda"
                                         title="image-1" id="thumb1" name="thumb1"></li>
-                            </button>
                         </div>
                         <div class="row2">
                             <button id="rowBtn2">
@@ -90,38 +130,105 @@
                 </div>
             </div>
         </aside>
+        <!--mobile aside page-->
+        <div class="aside-page-mobile">
+            <div class="amplied-image-mobile">
+                <span>
+                    <img src="./assets/tenis-1-ampliado.png" alt="image2x">
+                </span>
+                <span>
+                    <img src="./assets/tenis-2-ampliado.png" alt="image2x">
+                </span>
+            </div>
+
+            <h1>Tênis</h1>
+
+            <div class="thumbnail-image-mobile">
+                <div>
+                    <span>
+                        <p>tênis esportivo para corrida top</p>
+                        <p>Esse tênis tem o intuito de te deixar ainda mais fitnes,focado,e musculoso</p>
+                        <p class="price-mobile">R$ 1.000,00</p>
+                    </span>
+                    <img src="./assets/tenis-1-ampliado.png" alt="imagem-1" title="image-1">
+                    <button class="buy-btn" type="button">comprar</button>
+                </div>
+                <div>
+                    <span>
+                        <p>tênis esportivo para corrida top</p>
+                        <p>Esse tênis tem o intuito de te deixar ainda mais fitnes,focado,e musculoso</p>
+                        <p class="price-mobile">R$ 1.000,00</p>
+                    </span>
+                    <img src="./assets/tenis-2-ampliado.png" alt="imagem-2">
+                    <button class="buy-btn" type="button">comprar</button>
+                </div>
+                <div>
+                    <span>
+                        <p>tênis esportivo para corrida top</p>
+                        <p>Esse tênis tem o intuito de te deixar ainda mais fitnes,focado,e musculoso</p>
+                        <p class="price-mobile">R$ 1.000,00</p>
+                    </span>
+                    <img src="./assets/tenis-3-ampliado.png" alt="imagem-3">
+                    <button class="buy-btn" type="button">comprar</button>
+                </div>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/OdWpVYoj_EI" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
         <footer>
-            <ul>
-                <li>
-                    <iframe src="https://www.youtube.com/embed/OdWpVYoj_EI" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </li>
-                <li>
-                    <a href="#Face">facebook</a>
-                </li>
-                <li>
-                    <a href="#Insta">instagram</a>
-                </li>
-                <li>
-                    <a href="#you">youtube</a>
-                </li>
-                <li>
-                    <a href="#Twite">twitter</a>
-                </li>
-                <li>
-                    <button class="btn-explorer">
-                        explere mais
-                        <span>
-                            <img src="./assets/icon-arrow.svg" alt="icon">
-                        </span>
-                    </button>
-                </li>
-            </ul>
+            <div class="footer-bottom">
+                <ul>
+                    <li>
+                        <iframe src="https://www.youtube.com/embed/OdWpVYoj_EI" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </li>
+                    <li>
+                        <a href="#Face">facebook</a>
+                    </li>
+                    <li>
+                        <a href="#Insta">instagram</a>
+                    </li>
+                    <li>
+                        <a href="#you">youtube</a>
+                    </li>
+                    <li>
+                        <a href="#Twite">twitter</a>
+                    </li>
+                    <li>
+                        <button class="btn-explorer">
+                            explere mais
+                            <span>
+                                <img src="./assets/icon-arrow.svg" alt="icon">
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <!--mobile footer-->
+            <div class="mobile-footer">
+                <ul>
+                    <li>
+                        <a href="#Face">facebook</a>
+                    </li>
+                    <li>
+                        <a href="#Insta">instagram</a>
+                    </li>
+                    <li>
+                        <a href="#you">youtube</a>
+                    </li>
+                    <li>
+                        <a href="#Twite">twitter</a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </div>
-
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
